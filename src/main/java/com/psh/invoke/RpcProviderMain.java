@@ -13,7 +13,7 @@ public class RpcProviderMain {
         HelloService helloService = new HelloServiceImpl();
 
         //服务的提供方，包括具体的实现类，要调用的方法，方法的参数，这里只实现类，端口
-        ProviderReflect.provider(helloService.getClass(),11);
+        ProviderReflect.provider(helloService,11);
     }
 
 }
